@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Bank | Camps Near</title>
+<link rel="shortcut icon" href="./images/fevicon.png" type="image/png">
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+<img src="images/bloodpaint.jpg" width="100%" height="100%" style="position:fixed; z-index:-1000; overflow:hidden;">
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-white" style="width: 100%; height: auto; background: rgba(33, 183, 213, 0.6);">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"  ">
+    <img src="./images/logo2.png" width="250" height="75" class="d-inline-block align-top" alt="">
+    
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style=" float:none; margin:0 auto; display: block; text-align: center; ">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Info
+        </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="blood banks.html">Blood Banks</a>
+          <a class="dropdown-item" href="Donation Program.html">Donation Program</a>
+          <a class="dropdown-item" href="Donor Details.html">Donor's Details</a>
+          <a class="dropdown-item" href="suggestion.html">Suggestion</a>
+        </div>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallery.HTML">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="why blood.html">Why Give Blood</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+
+      <li class="nav-item">
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0"  >
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+      <button id ="b1" class="btn btn-primary" type="submit" style="background: #046299;">Search</button>
+    </form>
+    &nbsp;<button id="b2" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="height: 38px; width: 80px; font-size: 15px; margin-top: 1px; background: #046299;">
+  Sign Up
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"><legend>&nbsp;&nbsp;Join Us</legend><br>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <form method="post" id="myform">
+Name:<sup>*</sup><br> <input type="text" name="name" autocomplete="on" style="width:95%;height:30px;" id="name"><br><br>
+  E-Mail ID:<sup>*</sup><br> <input type="text" name="email" autocomplete="on" style="width:95%;height:30px;" id="email"><br><br>
+  Phone:<sup>*</sup><br> <input type="tel" name="phone" style="width:95%;height:30px;" id="phone"><br><br>
+  Password:<sup>*</sup><br><input type="password" name="password" autocomplete="off" style="width:95%;height:30px;" id="pass"><br><br>
+<div class="modal-footer">
+     <button type="submit" class="btn btn-primary" style="margin-left: auto; margin-right: auto;">Sign Up</button>
+      </div>
+</form>
+<script src="validate.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</nav>
+
+</div>
+</header>
+<br>
+  <section id="main" style="color:black;">
+<div class="container">
+
+  <div id="maphead">
+		<h1><u><center>Site Map for Blood donation location</center></u></h1><br><h3> &#9759 Click on top left button to see all location</h3>
+	</div>
+	<div id="site_map">
+	
+  	<iframe name="frame1" src="https://www.google.co.in/maps/d/embed?mid=1lreC0AizZMjHtCuOlcyA-B3HnLI" width="1100" height="500" style="border:none;"></iframe>
+
+<div><br>
+
+<h2 align="center">Blood camps</h2>
+
+<p align="center">The following is the list of major blood camps in different sates and their details</p>
+      
+<table width="700" border="5" align="center" style="background: rgba(225, 225, 225, 0.6); text-align:center;">
+
+<tbody>
+
+<tr style="font-weight:bold;">
+<td>SR.NO.</td>
+<td>STATE</td>
+<td>CITY</td>
+<td>MANAGER</td>
+<td>CONTACT NO.</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>PUNJAB</td>
+<td>JALANDHAR</td>
+<td>RAMAN PREET</td>
+<td>8975845899</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>DELHI</td>
+<td>NEW DELHI</td>
+<td>TANYA</td>
+<td>8365488596</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>ANDHRA PRADESH</td>
+<td>VIJAYAWADA</td>
+<td>PRASAD KUMAR</td>
+<td>7878965897</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>TELANGANA</td>
+<td>HYDERABAD</td>
+<td>VAIKUNTAM</td>
+<td>9989693696</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>TAMIL NADU</td>
+<td>CHENNAI</td>
+<td>PANEER SELVAM</td>
+<td>8888999966</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>ORISSA</td>
+<td>BHUVANESWAR</td>
+<td>PRATHI ADHARSH</td>
+<td>8998697845</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>MAHARASHTRA</td>
+<td>MUMBAI</td>
+<td>PRIYANKA RUTH</td>
+<td>9848032919</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>HIMACHAL PRADESH</td>
+<td>DALHOUSIE</td>
+<td>DEEPTHI SHARMA</td>
+<td>7899874567</td>
+          </tr>
+<tr>
+<td>9</td>
+<td>RAJASTHAN</td>
+<td>JAIPUR</td>
+<td>SHIVAM BHATRA</td>
+<td>9989889945</td>
+</tr>
+           <tr>
+<td>10</td>
+<td>MANIPUR</td>
+<td>SHIRAJPUR</td>
+<td>JIMSON NGANGOM</td>
+<td>9789747845</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+  </section>
+
+<footer>
+     <p> Blood Donation | Copyright &copy; 2018</p>
+</footer>
+
+</body>
+</html>

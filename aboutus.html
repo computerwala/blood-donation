@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<title>Blood Bank | About Us</title>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width">
+
+<meta name="description" content="professional web design">
+
+<title>Blood Donation | About us</title>
+
+<link rel="stylesheet" href="./css/style.css">
+    
+<link rel="shortcut icon" href="./images/fevicon.png" type="image/png">
+  
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<style>
+
+table{
+font-weight:bold;
+text-align:center;
+width:700px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba( 25, 110, 200, 0.3);
+}
+tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+tr:hover{
+	cursor: default;
+	background-color:yellow;
+	color:black;
+}
+
+th{
+background:red;
+font-weight:bold;
+text-align:center;
+font-size:20px;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+    
+<div class="background-wrap" style="height: 668px; width:1920px;">
+<video id="video-blood" preload="auto" autoplay loop muted>
+<source src="./images/blood.mp4">
+</video>
+</div> 
+
+<nav class="navbar navbar-toggleable-md navbar-dark bg-white" style="width: 100%; height: auto; background: rgba(70, 50, 70, 0.7);">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+    <img src="./images/logo2.png" width="250" height="75" class="d-inline-block align-top" alt="">
+    
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style=" float:none; margin:0 auto; display: block; text-align: center; ">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Info
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="blood banks.html">Blood Banks</a>
+          <a class="dropdown-item" href="Donation Program.html">Donation Program</a>
+          <a class="dropdown-item" href="Donor Details.html">Donor's Details</a>
+          <a class="dropdown-item" href="suggestion.html">Suggestion</a>
+        </div>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallery.HTML">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="why blood.html">Why Give Blood</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+
+      <li class="nav-item">
+
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0"  >
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" >
+      <button id ="b1" class="btn btn-primary" type="submit" style="background: #046299;">Search</button>
+    </form>
+    &nbsp;<button id="b2" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="height: 38px; width: 80px; font-size: 15px; margin-top: 1px; background: #046299;">
+  Sign Up
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"><legend>&nbsp;&nbsp;Join Us</legend><br>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <form method="post" id="myform">
+Name:<sup>*</sup><br> <input type="text" name="name" autocomplete="on" style="width:95%;height:30px;" id="name"><br><br>
+  E-Mail ID:<sup>*</sup><br> <input type="text" name="email" autocomplete="on" style="width:95%;height:30px;" id="email"><br><br>
+  Phone:<sup>*</sup><br> <input type="tel" name="phone" style="width:95%;height:30px;" id="phone"><br><br>
+  Password:<sup>*</sup><br><input type="password" name="password" autocomplete="off" style="width:95%;height:30px;" id="pass"><br><br>
+<div class="modal-footer">
+     <button type="submit" class="btn btn-primary" style="margin-left: auto; margin-right: auto;">Sign Up</button>
+      </div>
+ 
+</form>
+<script src="validate.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</nav>
+
+
+<section id="main" style="color:white;">
+
+<div class="container">
+
+<br>
+<h2 class="page-title" style="color:#598BE3;">About Us</h2>
+
+<p>Our Blood donation camp was established in the year 1998 under the approval government of India.The important supporters of our website were GRAPHIC DESIGNING HOUSE pvt ltd,HEALTH group of India,Tata consultancy services.Our headquarters is located in Mumbai.Altogether,we have 2340 branched spread all accross the country and each branch is organised by our employed officials.</p>
+
+<br>
+<div class="dark">
+<h3 style="color:#598BE3;">What we do</h3>
+
+<p>Our Blood donation camp was established in the year 1998 under the approval government of India.The important supporters of our website were GRAPHIC DESIGNING HOUSE pvt ltd,HEALTH group of india.</p>
+  </div>
+  <div>
+<h2 style="color:#598BE3;">About this website</h2>
+
+<p>This website was made as an project for CSE326.
+ Members participated in this project are:
+
+<center>
+<table border="5">
+
+<tr>
+<th>S.no.</th>
+<th>Name</th>
+<th>Reg.&nbsp;no.</th>
+<th>Roll&nbsp;no</th>
+<th>Contributions</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Aman Kumar Soni</td>
+<td> 11715307</td>
+<td>13</td><td>APIs, Gallery</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Krishna Nand Pandey</td>
+<td>1171xxxx</td>
+<td>14</td><td>About Us, Suggestion Form</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Vidush Dixit</td>
+<td>11715314</td>
+<td>15</td>
+<td>Home page, JavaScript, Sign Up</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Aditya Jaiswal</td>
+<td>1171xxxx</td>
+<td>16</td><td>Why Give Blood, Donor's Details</td>
+</tr>
+
+</table>
+</center>
+
+</p>
+</div>
+
+</div>
+
+</section>
+
+   
+<footer>
+     <p> Blood Donation | Copyright &copy; 2018</p>
+</footer>
+
+</body>
+
+</html>
